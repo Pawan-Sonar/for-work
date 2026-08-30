@@ -1,7 +1,3 @@
-print("======================================")
-print("       MOBILE RECHARGE SIMULATOR")
-print("======================================")
-
 mobile_number = input("Enter your mobile number: ")
 
 if len(mobile_number) != 10 or not mobile_number.isdigit():
