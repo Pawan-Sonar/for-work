@@ -1,9 +1,7 @@
 products = []
 
-while True:
-    print("\n======================================")
-    print("       INVENTORY MANAGEMENT SYSTEM")
-    print("======================================")
+
+    print("INVENTORY MANAGEMENT SYSTEM")
     print("1. Add Product")
     print("2. View Products")
     print("3. Stock In")
