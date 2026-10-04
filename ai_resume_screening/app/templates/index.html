@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Resume Screening</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Resume intelligence</p>
+        <h1>AI Resume Screening & Job Matching</h1>
+        <p>Upload a resume, add a job description, and receive skill matching insights.</p>
+      </header>
+
+      <section class="grid">
+        <form id="job-form" class="panel">
+          <h2>Create job description</h2>
+          <input id="job-title" placeholder="Job title" required>
+          <textarea id="job-description" placeholder="Paste the full job description" required></textarea>
+          <button>Add job</button>
+        </form>
+
+        <form id="resume-form" class="panel">
+          <h2>Upload resume</h2>
+          <input id="resume-file" type="file" accept=".pdf,.docx" required>
+          <button>Upload PDF or DOCX</button>
+          <p class="hint">Processing happens in a Redis background worker.</p>
+        </form>
+
+        <section class="panel match-panel">
+          <h2>Compare candidate</h2>
+          <select id="resume-select"></select>
+          <select id="job-select"></select>
+          <button id="match-button">Calculate match</button>
+          <div id="result" class="result">Select a ready resume and job description.</div>
+        </section>
+      </section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
